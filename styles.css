@@ -1,0 +1,48 @@
+/* Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed navigation bar styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  transition: background 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+#navbar.scrolled {
+  background: #0066cc;    /* Change background when scrolled */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+
+/* Nav links */
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+#navbar li {
+  margin: 0 15px;
+}
+
+#navbar a {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s, background 0.3s;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+  background: #0088ff;
+  color: #fff500;
+  border-radius: 4px;
+}
